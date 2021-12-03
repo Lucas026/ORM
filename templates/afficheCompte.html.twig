@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+    <table>
+        <thead>
+            <th>Email</th>
+            <th>Mdp</th>
+        </thead>
+        <tbody>
+        {% for infos in info %}
+            <tr>
+                <td>{{infos.email}}</td>
+                <td>{{infos.mdp}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
